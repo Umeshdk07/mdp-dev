@@ -86,7 +86,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
 source_image_reference {
   publisher = var.image_publisher
   offer     = var.image_offer 
-  sku       = "22_04-lts-gen2"
+  sku       = var.image_sku
   version   = "latest"
 }
 
