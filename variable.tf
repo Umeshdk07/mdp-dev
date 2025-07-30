@@ -86,6 +86,11 @@ variable "image_offer" {
   type        = string
   default     = "UbuntuServer"
 }
+variable "image_version" {
+  description = "Version of the VM image"
+  type        = string
+  default     = "latest"
+}
 
 variable "image_sku" {
   description = "SKU of the VM image"
