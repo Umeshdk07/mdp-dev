@@ -84,7 +84,6 @@ variable "image_publisher" {
 variable "image_offer" {
   description = "Offer of the VM image"
   type        = string
-  default     = "UbuntuServer"
 }
 
 variable "image_sku" {
