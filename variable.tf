@@ -4,6 +4,16 @@ variable "resource_group_name" {
   type        = string
 }
 
+variable "vnet_name" {
+  description = "name of vnet"
+  type = string
+}
+
+variable "vnet_address_space" {
+  description = "name of vnet address"
+  type = string
+}
+
 variable "location" {
   description = "Azure region for resources"
   type        = string
