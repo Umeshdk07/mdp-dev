@@ -79,7 +79,6 @@ variable "os_disk_type" {
 variable "image_publisher" {
   description = "Publisher of the VM image"
   type        = string
-  default     = "Canonical"
 }
 
 variable "image_offer" {
