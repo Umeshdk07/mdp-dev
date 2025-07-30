@@ -11,7 +11,7 @@ variable "sub_id" {
 variable "location" {
   description = "Azure region for resources"
   type        = string
-  default     = "East US"
+  default     = "Central India"
 }
 
 variable "vnet_name" {
