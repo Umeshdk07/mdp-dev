@@ -11,7 +11,6 @@ variable "sub_id" {
 variable "location" {
   description = "Azure region for resources"
   type        = string
-  default     = "Central India"
 }
 
 variable "vnet_name" {
@@ -94,5 +93,4 @@ variable "image_sku" {
 variable "image_version" {
   description = "Version of the VM image"
   type        = string
-  default     = "latest"
 }
