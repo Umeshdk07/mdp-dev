@@ -1,25 +1,11 @@
-
-resource_group_name = "mdp-dev-resource-group"
-location            = "Central India"
-
-vnet_name           = "mdp-vnet"
-subnet_prefix         = "10.0.1.0/24"
-virtual_network_name  = "mdp1-vnet"
-public_ip_sku         = "Standard"
-
-vnet_address_space  = ["10.0.0.0/16"]
-
-subnet_name         = "subnet-demo"
-subnet_prefixes     = ["10.0.1.0/24"]
-
-public_ip_name      = "public-ip-mdp"
-
-
-nic_name            = "nic-mdp"
-
-nsg_name            = "nsg-mdp"
-
-vm_name             = "vm-mdp"
-vm_size             = "Standard_D2s_v2"
-admin_username      = "mdp-dev"
-admin_password      = "Mdp-dev@123"
+resource_group_name = "example-rg"
+vnet_name           = "example-vnet"
+vnet_address_space  = "10.0.0.0/16"
+subnet_name         = "example-subnet"
+subnet_prefix       = "10.0.1.0/24"
+public_ip_name      = "example-public-ip"
+nic_name            = "example-nic"
+nsg_name            = "example-nsg"
+vm_name             = "example-vm"
+admin_username      = "azureuser"
+admin_password      = "P@ssword1234!"
