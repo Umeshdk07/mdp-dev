@@ -74,7 +74,6 @@ variable "admin_password" {
 variable "os_disk_type" {
   description = "Type of the OS disk"
   type        = string
-  default     = "Standard_LRS"
 }
 
 variable "image_publisher" {
