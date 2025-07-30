@@ -3,6 +3,7 @@ resource_group_name = "mdp-dev-resource-group"
 location            = "Central India"
 
 vnet_name           = "mdp-vnet"
+virtual_network_name = "mdp-vnet"
 vnet_address_space  = ["10.0.0.0/16"]
 
 subnet_name         = "subnet-demo"
