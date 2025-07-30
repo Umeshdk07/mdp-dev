@@ -80,7 +80,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
 
   admin_ssh_key {
     username   = "azureuser"
-    public_key = file("/home/umesh/.ssh/authorized_keys") 
+    public_key = file("/home/mdpdev/.ssh/authorized_keys") 
   }
     
 source_image_reference {
