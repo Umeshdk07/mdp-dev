@@ -1,30 +1,21 @@
-
 variable "resource_group_name" {
   description = "Name of the resource group"
   type        = string
-}
- variable "subnet_prefix" {
-  description = "Name of the subnet prefix"
-  type        = string
- }
-
-variable "vnet_name" {
-  description = "name of vnet"
-  type = string
-}
-
-variable "vnet_address_space" {
-  description = "name of vnet address"
-  type = string
 }
 
 variable "location" {
   description = "Azure region for resources"
   type        = string
+  default     = "East US"
 }
 
-variable "virtual_network_name" {
+variable "vnet_name" {
   description = "Name of the virtual network"
+  type        = string
+}
+
+variable "vnet_address_space" {
+  description = "Address space for the virtual network"
   type        = string
 }
 
@@ -33,8 +24,13 @@ variable "subnet_name" {
   type        = string
 }
 
+variable "subnet_prefix" {
+  description = "Address prefix for the subnet"
+  type        = string
+}
+
 variable "public_ip_name" {
-  description = "Name of the public IP address"
+  description = "Name of the public IP"
   type        = string
 }
 
@@ -53,24 +49,25 @@ variable "vm_name" {
   type        = string
 }
 
-variable "admin_username" {
-  description = "Admin username for the virtual machine"
-  type        = string
-}
-
-variable "admin_password" {
-  description = "Admin password for the virtual machine"
-  type        = string
-  sensitive   = true
-}
 variable "vm_size" {
-  description = "The size of the virtual machine"
+  description = "Size of the virtual machine"
   type        = string
   default     = "Standard_F8s_v2"
 }
 
+variable "admin_username" {
+  description = "Admin username for the VM"
+  type        = string
+}
+
+variable "admin_password" {
+  description = "Admin password for the VM"
+  type        = string
+  sensitive   = true
+}
+
 variable "os_disk_type" {
-  description = "The type of OS disk"
+  description = "Type of the OS disk"
   type        = string
   default     = "Standard_LRS"
 }
@@ -86,14 +83,15 @@ variable "image_offer" {
   type        = string
   default     = "UbuntuServer"
 }
-variable "image_version" {
-  description = "Version of the VM image"
-  type        = string
-  default     = "latest"
-}
 
 variable "image_sku" {
   description = "SKU of the VM image"
   type        = string
   default     = "20_04-lts"
+}
+
+variable "image_version" {
+  description = "Version of the VM image"
+  type        = string
+  default     = "latest"
 }
