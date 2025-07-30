@@ -13,7 +13,7 @@ subnet_name         = "subnet-demo"
 subnet_prefixes     = ["10.0.1.0/24"]
 
 public_ip_name      = "public-ip-mdp"
-public_ip_sku       = "Basic"
+
 
 nic_name            = "nic-mdp"
 
