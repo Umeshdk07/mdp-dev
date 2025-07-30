@@ -89,10 +89,13 @@ resource "azurerm_linux_virtual_machine" "vm" {
     storage_account_type = var.os_disk_type
   }
 
-  source_image_reference {
-    publisher = var.image_publisher
-    offer     = var.image_offer
-    sku       = var.image_sku
-    version   = var.image_version
+  
+source_image_reference {
+  publisher = "Canonical"
+  offer     = "UbuntuServer"
+  sku       = "22_04-lts"
+  version   = "latest"
+}
+
   }
 }
