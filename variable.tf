@@ -63,3 +63,32 @@ variable "admin_password" {
   type        = string
   sensitive   = true
 }
+variable "vm_size" {
+  description = "The size of the virtual machine"
+  type        = string
+  default     = "Standard_F8s_v2"
+}
+
+variable "os_disk_type" {
+  description = "The type of OS disk"
+  type        = string
+  default     = "Standard_LRS"
+}
+
+variable "image_publisher" {
+  description = "Publisher of the VM image"
+  type        = string
+  default     = "Canonical"
+}
+
+variable "image_offer" {
+  description = "Offer of the VM image"
+  type        = string
+  default     = "UbuntuServer"
+}
+
+variable "image_sku" {
+  description = "SKU of the VM image"
+  type        = string
+  default     = "20_04-lts"
+}
