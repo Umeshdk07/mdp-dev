@@ -82,12 +82,14 @@ resource "azurerm_linux_virtual_machine" "vm" {
     username   = "azureuser"
     public_key = file("/home/umesh/.ssh/id_ed25519.pub") 
   }
-    source_image_reference {
-    publisher = "Canonical"
-    offer     = "UbuntuServer"
-    sku       = "22_04-lts"
-    version   = "latest"
- }
+    
+source_image_reference {
+  publisher = "Canonical"
+  offer     = "0001-com-ubuntu-server-jammy"
+  sku       = "22_04-lts-gen2"
+  version   = "latest"
+}
+
     admin_password = var.admin_password
 
   os_disk {
