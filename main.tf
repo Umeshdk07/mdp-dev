@@ -97,5 +97,3 @@ source_image_reference {
   version   = "latest"
 }
 
-  }
-}
