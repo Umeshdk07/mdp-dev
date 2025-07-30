@@ -89,7 +89,6 @@ variable "image_offer" {
 variable "image_sku" {
   description = "SKU of the VM image"
   type        = string
-  default     = "20_04-lts"
 }
 
 variable "image_version" {
