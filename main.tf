@@ -82,12 +82,13 @@ resource "azurerm_linux_virtual_machine" "vm" {
     username   = "azureuser"
     public_key = file("/home/umesh/.ssh/id_ed25519.pub") 
   }
-  admin_password = var.admin_password
+    admin_password = var.admin_password
 
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = var.os_disk_type
   }
+}
 
   
 source_image_reference {
