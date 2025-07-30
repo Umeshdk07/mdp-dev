@@ -1,6 +1,7 @@
 resource_group_name = "example-rg"
 vnet_name           = "example-vnet"
 vnet_address_space  = "10.0.0.0/16"
+location = "Central India"
 subnet_name         = "example-subnet"
 subnet_prefix       = "10.0.1.0/24"
 public_ip_name      = "example-public-ip"
