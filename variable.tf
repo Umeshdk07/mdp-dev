@@ -3,6 +3,7 @@ variable "resource_group_name" {
   description = "Name of the resource group"
   type        = string
 }
+ variable "subnet_prefix" {}
 
 variable "vnet_name" {
   description = "name of vnet"
